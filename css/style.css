@@ -1,0 +1,504 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}body{
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'poppins', 'roboto', 'open sans';
+    background-color: #fff;
+}
+
+/* Header Styling */
+header{
+    width: 100%;
+    background-image: url(../cookbook-bgpic.png);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cukbuk-logo{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-wrap{
+    display: flex;
+    padding-top: 5%;
+}
+.logo-wrap h1{
+    font-size: 1.3em;
+    color: #fff;
+    padding-top: 5%;
+}
+span{
+    color: #2fceff;
+}
+.cukbuk-logo img{
+    width: 50px;
+    height: 50px;
+}
+nav{
+    display: none;
+    font-size: .8em;
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    z-index: 100;
+    line-height: 1.5;
+    top: 0;
+    right: 0;
+}
+nav ul{
+    text-align: right;
+    padding: 50px 45px 0;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    font-size: 1.3em;
+    text-decoration: none;
+    font-family: 'Roboto';
+    line-height: 2;
+}
+#menu-button{
+    padding: 4%;
+    font-size: 1.4em;
+    color: #fff;
+}
+#exit-button{
+    float: right;
+    font-size: 1.3em;
+    padding: 15px 15px 0 0;
+}
+.header-h1{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20%;
+}
+.header-h1 h1{
+    font-size: 1.5em;
+    color: #2fceff;
+}
+.header-h1 p{
+    font-size: .8em;
+    color: #fff;
+}
+
+
+/* Popular Section Styling */
+.popular{
+    background: #cccc;
+}
+.popular h2{
+    font-size: 1em;
+    padding: 5% 0 0 3%;
+    color: #2fceff;
+}
+.popular-cont{
+    padding: 2% 5%;
+}
+.breakfast{
+    border: 1px solid #cccc;
+}
+.breakfast{
+    display: flex;
+    padding: 3%;
+}
+.breakfast img{
+    width: 200px;
+    height: 100px;
+    border: 1px solid #2fceff;
+    border-radius: 50%;
+}
+.recipe-content{
+    padding: 2% 0 0 2%;
+    line-height: 1.2;
+}
+.recipe-content h4{
+    padding-bottom: 10px;
+}
+.recipe-content p{
+    font-size: .8em;
+}
+
+/* Line */
+
+/* Our Team Secion Styling */
+.team-cont{
+    width: 70%;
+    margin: 2% auto;
+    text-align: center;
+    border: #cccc 1px solid;
+    border-radius: 5px;
+}
+.our-team h2{
+    text-align: center;
+    padding: 5% 0 4%;
+    color: #2fceff;
+    font-size: 1em;
+}
+.team-pic{
+    padding-top: 3%;
+}
+.team-pic img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #2fceff;
+}
+.team-pic h4{
+    padding-bottom: 2%;
+}
+.team-pic p{
+    font-size: .8em;
+    line-height: 1.2;
+    padding-bottom: 5%;
+}
+
+
+/* Footer Styling */
+footer{
+    background: #30363d;
+}
+.footer-cont{
+    width: 95%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 8% 2% 0;
+}
+.ft-contacts{
+    margin-left: 1%;
+}
+.ft-contacts h4{
+    color: #2fceff;
+    padding-top: 3%;
+}
+.ft-contacts p{
+    color: #fff;
+    font-size: .7em;
+    font-weight: 100;
+}
+.ft-links .nav-links{
+    display: flex;
+    margin-left: -35%;
+    padding-top: 5%;
+}
+.ft-links .nav-links p{
+    color: #2fceff;
+    padding: 0 5%;
+}
+.ft-links .nav-links .stroke{
+    color: #fff;
+}
+.socials{
+    margin-left: -10%;
+    padding-top: 15%;
+}
+.socials a{
+    color: #2fceff;
+}
+.ft-bottom{
+    background: #000;
+}
+.ft-bottom p{
+    text-align: center;
+    font-size: .7em;
+    font-weight: 100;
+    color: #fff;
+    padding: 2%;
+}
+
+
+
+@media only screen and (min-width: 768px){
+    /* Header Styling */
+header{
+    height: 50vh;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cukbuk-logo{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-wrap{
+    display: flex;
+    padding: 10% 0 0 10%;
+}
+.logo-wrap h1{
+    font-size: 1.3em;
+    color: #fff;
+    padding-top: 5%;
+}
+span{
+    color: #2fceff;
+}
+.cukbuk-logo img{
+    width: 50px;
+    height: 50px;
+}
+nav{
+    display: block;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: unset;
+    height: 70px;
+    
+}
+nav ul{
+    display: flex;
+    padding: 5%;
+}
+nav ul li{
+    list-style: none;
+    padding: 2.5%;
+}
+nav ul li a{
+    display: block;
+    font-size: 1.3em;
+    color: #2fceff;
+}
+#menu-button, #exit-button{
+    display: none;
+}
+.header-h1{
+    width: 40%;
+}
+.header-h1 h1{
+    font-size: 1.5em;
+    color: #2fceff;
+    padding-bottom: 3%;
+}
+.header-h1 p{
+    font-size: .8em;
+    color: #fff;
+}
+
+
+/* Popular Section Styling */
+.popular h2{
+    font-size: 1.3em;
+    padding: 5% 0 0 2%;
+    color: #2fceff;
+}
+.popular-1{
+    display: flex;
+}
+.popular-1 .banku .recipe-content{
+    padding-left: 2%;
+}
+.popular-2{
+    display: flex;
+}
+.popular-2 .fufu .recipe-content{
+    padding-left: 2%;
+}
+.popular-cont{
+    padding: 2%;
+}
+.breakfast{
+    height: 150px;
+    border: 1px solid #cccc;
+}
+
+/* Line */
+
+/* Our Team Secion Styling */
+.first-team{
+    display: flex;
+}
+.second-team{
+    display: flex;
+}
+.team-cont{
+    width: 50%;
+    margin: 2%;
+}
+.our-team h2{
+    text-align: left;
+    font-size: 1.3em;
+    padding: 5% 0 0 2%;
+    color: #2fceff;
+}
+.team-pic{
+    padding: 5%;
+}
+
+
+/* Footer Styling */
+.footer-cont{
+    width: 70%;
+    height: 200px;
+}
+.ft-contacts{
+    margin-left: 0;
+}
+.ft-contacts h4{
+    font-size: 1.2em;
+}
+.ft-contacts p{
+    font-size: .8em;
+}
+.ft-links .nav-links p{
+    font-size: 1.2em;
+    padding: 0 6%;
+}
+.socials a i{
+    font-size: 1.2em;
+    padding: 2%;
+}
+.ft-bottom p{
+    font-size: 1em;
+}
+}
+
+
+
+@media only screen and (min-width: 1024px){
+    /* Header Styling */
+header{
+    height: 100vh;
+}
+.logo-wrap{
+    padding: 20% 0 0 20%;
+}
+.logo-wrap h1{
+    font-size: 1.3em;
+    color: #fff;
+    padding-top: 5%;
+}
+span{
+    color: #2fceff;
+}
+.cukbuk-logo img{
+    width: 50px;
+    height: 50px;
+}
+nav{
+    display: block;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: unset;
+    height: 70px;
+    
+}
+nav ul{
+    display: flex;
+    padding: 5%;
+}
+nav ul li{
+    list-style: none;
+    padding: 2.5%;
+}
+nav ul li a{
+    display: block;
+    font-size: 1.3em;
+    color: #2fceff;
+}
+#menu-button, #exit-button{
+    display: none;
+}
+.header-h1{
+    width: 40%;
+}
+.header-h1 h1{
+    font-size: 1.5em;
+    color: #2fceff;
+    padding-bottom: 3%;
+}
+.header-h1 p{
+    font-size: .8em;
+    color: #fff;
+}
+
+
+/* Popular Section Styling */
+.popular h2{
+    font-size: 1.3em;
+    padding: 5% 0 0 2%;
+    color: #2fceff;
+}
+.popular-1{
+    display: flex;
+}
+.popular-1 .banku .recipe-content{
+    padding-left: 2%;
+}
+.popular-2{
+    display: flex;
+}
+.popular-2 .fufu .recipe-content{
+    padding-left: 2%;
+}
+.popular-cont{
+    padding: 2%;
+}
+.breakfast{
+    height: 150px;
+    border: 1px solid #cccc;
+}
+
+/* Line */
+
+/* Our Team Secion Styling */
+.first-team{
+    display: flex;
+}
+.second-team{
+    display: flex;
+}
+.team-cont{
+    width: 50%;
+    margin: 2%;
+}
+.our-team h2{
+    text-align: left;
+    font-size: 1.3em;
+    padding: 5% 0 0 2%;
+    color: #2fceff;
+}
+.team-pic{
+    padding: 5%;
+}
+
+
+/* Footer Styling */
+.footer-cont{
+    width: 70%;
+    height: 200px;
+}
+.ft-contacts{
+    margin-left: 0;
+}
+.ft-contacts h4{
+    font-size: 1.2em;
+}
+.ft-contacts p{
+    font-size: .8em;
+}
+.ft-links .nav-links p{
+    font-size: 1.2em;
+    padding: 0 6%;
+}
+.socials a i{
+    font-size: 1.2em;
+    padding: 2%;
+}
+.ft-bottom p{
+    font-size: 1em;
+}
+}

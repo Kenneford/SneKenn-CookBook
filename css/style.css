@@ -130,7 +130,6 @@ nav ul li a{
     font-size: .8em;
 }
 
-/* Line */
 
 /* Our Team Secion Styling */
 .team-cont{
@@ -193,6 +192,10 @@ footer{
     display: flex;
     margin-left: -35%;
     padding-top: 5%;
+}
+.ft-links .nav-links a{
+    text-decoration: none;
+    color: #2fceff;
 }
 .ft-links .nav-links p{
     color: #2fceff;

@@ -24,7 +24,7 @@ header{
     background: #292929;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 1.5%;
+    padding-bottom: 2%;
 }
 .cukbuk-logo{
     display: flex;
@@ -32,10 +32,10 @@ header{
 }
 .logo-wrap{
     display: flex;
-    padding-top: 5%;
+    padding-top: 8%;
 }
 .logo-wrap h1{
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: #fff;
     padding-top: 5%;
 }
@@ -52,7 +52,6 @@ nav{
     position: fixed;
     width: 50%;
     height: 100vh;
-    z-index: 100;
     line-height: 1.5;
     top: 0;
     right: 0;
@@ -63,6 +62,8 @@ nav ul{
 }
 nav ul li{
     list-style: none;
+    display: inline-block;
+    margin-left: 2%;
 }
 nav ul li a{
     display: block;

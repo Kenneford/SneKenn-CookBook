@@ -71,6 +71,7 @@ nav ul li a{
     font-size: 1.3em;
     text-decoration: none;
     font-family: 'Roboto',sans-serif;
+    margin-left: 20px;
     line-height: 2;
 }
 #menu-button{

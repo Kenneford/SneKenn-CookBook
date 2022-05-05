@@ -20,8 +20,11 @@ header{
 }
 .logo{
     width: 100%;
+    position: fixed;
+    background: #292929;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 1.5%;
 }
 .cukbuk-logo{
     display: flex;
@@ -87,6 +90,7 @@ nav ul li a{
 .header-h1 h1{
     font-size: 1.5em;
     color: #2fceff;
+    margin-top: 10%;
 }
 .header-h1 p{
     font-size: .8em;

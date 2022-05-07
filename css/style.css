@@ -47,7 +47,7 @@ span{
     height: 50px;
 }
 nav{
-    display: none;
+    display: block;
     font-size: .8em;
     position: fixed;
     width: 50%;
@@ -55,15 +55,17 @@ nav{
     line-height: 1.5;
     top: 0;
     right: 0;
+    background: #292929;
 
 }
 nav ul{
     text-align: right;
-    
+    padding-top: 20%;
+    padding-right: 10%;
 }
 nav ul li{
     list-style: none;
-    display: inline-block;
+    display: block;
     margin-left: 2%;
 }
 nav ul li a{
@@ -71,8 +73,9 @@ nav ul li a{
     font-size: 1.3em;
     text-decoration: none;
     font-family: 'Roboto',sans-serif;
-    margin-left: 20px;
+    padding: 4%;
     line-height: 2;
+    color: #2fceff;
 }
 #menu-button{
     padding: 4%;
@@ -83,6 +86,7 @@ nav ul li a{
     float: right;
     font-size: 1.3em;
     padding: 15px 15px 0 0;
+    color: #fff
 }
 .header-h1{
     width: 70%;
@@ -239,7 +243,7 @@ header{
 .logo{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .cukbuk-logo{
     display: flex;
@@ -283,7 +287,9 @@ nav ul li a{
     font-size: 1.1em;
     color: #fff;
 }
-
+nav ul li a:hover{
+    color: #2fceff;
+}
 nav .current a{
     color: #2fceff;
     border-bottom: 2px solid #2fceff;
@@ -354,6 +360,121 @@ nav .current a{
 }
 .team-pic{
     padding: 5%;
+}
+
+/* Corn masala Page Styling */
+.container{
+    width: 75%;
+    margin: auto;
+    background: #fff;
+}
+.recipes-nav{
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background: #292929;
+    z-index: 10;
+}
+.recipes-nav .new-nav ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 8% 5% 0;
+}
+.recipes-nav .new-nav ul li{
+    list-style: none;
+    padding: 5%;
+}
+.recipes-nav .new-nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+.recipes-nav .new-nav ul li a:hover{
+    color: #2fceff;
+}
+.recipelogo-cont{
+    padding: 2%;
+}
+.recipe-logo{
+    display: flex;
+    padding-top: 1%;
+}
+.recipe-logo h1{
+    font-size: 1.5em;
+    color: #fff;
+    padding-top: 3%;
+}
+span{
+    color: #2fceff;
+}
+.recipe-logo img{
+    width: 50px;
+    height: 50px;
+}
+.recipe_img{
+    background-image: url(../Images/Breakfast/pexels-shantanu-pal-2679501.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+.recipe_container{
+    width: 68%;
+    background:rgba(240, 235, 235, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+    backdrop-filter: blur(.4rem);
+    padding:1.5rem;
+    border-radius: 1rem;
+    position: absolute;
+    top:62%;
+}
+.recipe_title{
+   text-align: center;
+   color: #2fceff;
+}
+.recipe_name{
+    font-size: 36px;
+}
+.recipe_title p span{
+ color: #fff;
+ font-size: 26px;
+ font-weight: 900;
+}
+.recipe_title p{
+    padding-top: 10px;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+/* Corn Masala Content Styling */
+.content{
+    padding: 5%;
+}
+.content h3{
+    padding-bottom: 2%;
+    color: #2fceff;
+    font-weight: 800;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 2%;
+    font-size: 1.3em;
+}
+
+/* Banku Page Styling */
+.banku_img{
+    background-image: url(../Images/Africa/tilapia.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
 }
 
 
@@ -504,6 +625,123 @@ nav ul li a{
 .our-team-cont{
     display: flex;
 }
+
+
+/* Corn masala Page Styling */
+.container{
+    width: 75%;
+    margin: auto;
+    background: #fff;
+}
+.recipes-nav{
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background: #292929;
+    z-index: 10;
+}
+.recipes-nav .new-nav ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 8% 5% 0;
+}
+.recipes-nav .new-nav ul li{
+    list-style: none;
+    padding: 5%;
+}
+.recipes-nav .new-nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+.recipes-nav .new-nav ul li a:hover{
+    color: #2fceff;
+}
+.recipelogo-cont{
+    padding: 2%;
+}
+.recipe-logo{
+    display: flex;
+    padding-top: 1%;
+}
+.recipe-logo h1{
+    font-size: 1.5em;
+    color: #fff;
+    padding-top: 3%;
+}
+span{
+    color: #2fceff;
+}
+.recipe-logo img{
+    width: 50px;
+    height: 50px;
+}
+.recipe_img{
+    background-image: url(../Images/Breakfast/pexels-shantanu-pal-2679501.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+.recipe_container{
+    width: 68%;
+    background:rgba(240, 235, 235, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+    backdrop-filter: blur(.4rem);
+    padding:1.5rem;
+    border-radius: 1rem;
+    position: absolute;
+    top:62%;
+}
+.recipe_title{
+   text-align: center;
+   color: #2fceff;
+}
+.recipe_name{
+    font-size: 36px;
+}
+.recipe_title p span{
+ color: #fff;
+ font-size: 26px;
+ font-weight: 900;
+}
+.recipe_title p{
+    padding-top: 10px;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+/* Corn Masala Content Styling */
+.content{
+    padding: 5%;
+}
+.content h3{
+    padding-bottom: 2%;
+    color: #2fceff;
+    font-weight: 800;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 2%;
+    font-size: 1.3em;
+}
+
+/* Banku Page Styling */
+.banku_img{
+    background-image: url(../Images/Africa/tilapia.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
 
 /* Footer Styling */
 .footer-cont{

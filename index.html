@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/recipe1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Aladin&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
     <title>CookBook</title>
 </head>
+
 <body>
     <!-- Header Coding -->
     <header>
-        <div class="logo">
+        <div class="header_container">
             <div class="cukbuk-logo">
                 <div class="logo-wrap">
                     <img src="./cookbook-LOGO.png" alt="">
                     <h1>Recipes<span>Blog</span></h1>
                 </div>
             </div>
-            <i class="fa-solid fa-bars menu-btn" id="menu-button"></i>
-            <nav>
-                <i class="fa-solid fa-xmark exit" id="exit-button"></i>
+           
+            <nav id="navLinks">
+                <i class="fa-solid fa-xmark exit" id="exit-button" onclick="hideMenu()"></i>
                 <ul>
                     <li class="current"><a href="index.html" class="">HOME</a></li>
                     <li><a href="about.html" class="">ABOUT</a></li>
-                    <li><a href="recipes.html" class="">RECIPES</a></li>
+                    <li><a href="#" class="">RECIPES</a>
+                        <div class="sub-menu">
+                            <ul class="sub-menu-ul">
+                                <li class="hover-me"><a href="#">Breakfast</a><i class="fa-solid fa-angle-right"></i>
+                                    <div class="sub-menu-breakfast">
+                                        <ul>
+                                            <li><a href="/masala.html">Recipe1</a></li>
+                                            <li><a href="/banku.html">Recipe2</a></li>
+                                            <li><a href="#">Recipe3</a></li>
+                                            <li><a href="#">Recipe4</a></li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                                <li><a href="#">Lunch</a></li>
+                                <li><a href="#">Snacks</a></li>
+                                <li><a href="#">Dinner</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="contact.html" class="">CONTACT</a></li>
                 </ul>
             </nav>
+            <i class="fa-solid fa-bars menu-btn" id="menu-button" onclick="showMenu()"></i>
         </div>
         <div class="header-h1">
             <h1>Welcome Home</h1>
@@ -146,18 +164,38 @@
                     <p><a href="recipes.html" class="">Recipes</a></p>
                 </div>
                 <div class="socials">
-                    <a href="#" target="_blank" class=""><i class="fa-brands fa-facebook face" title="Facebook Link"></i></a>
-                    <a href="#" target="_blank" class=""><i class="fa-brands fa-youtube yout" title="Youtube Link"></i></a>
-                    <a href="#" target="_blank" class=""><i class="fa-brands fa-instagram insta" title="Instagram Link"></i></a>
-                    <a href="#" target="_blank" class=""><i class="fa-brands fa-twitter twit" title="Twitter Link"></i></a>
-                    <a href="#" target="_blank" class=""><i class="fa-brands fa-github github" title="GitHub Link"></i></a>
+                    <a href="#" target="_blank" class=""><i class="fa-brands fa-facebook face"
+                            title="Facebook Link"></i></a>
+                    <a href="#" target="_blank" class=""><i class="fa-brands fa-youtube yout"
+                            title="Youtube Link"></i></a>
+                    <a href="#" target="_blank" class=""><i class="fa-brands fa-instagram insta"
+                            title="Instagram Link"></i></a>
+                    <a href="#" target="_blank" class=""><i class="fa-brands fa-twitter twit"
+                            title="Twitter Link"></i></a>
+                    <a href="#" target="_blank" class=""><i class="fa-brands fa-github github"
+                            title="GitHub Link"></i></a>
                 </div>
             </div>
         </div>
-        
+
         <div class="ft-bottom">
             <p>Recipes<span>Blog</span> | All Rights Reserved</p>
         </div>
     </footer>
+    <script>
+       
+function showMenu(){
+    var navLinks = document.getElementById("navLinks");
+    navLinks.style.display ="block";
+   
+}
+
+function hideMenu(){
+    var navLinks = document.getElementById("navLinks");
+    navLinks.style.display ="none";
+    
+}
+    </script>
 </body>
+
 </html>

@@ -1,174 +1,272 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}body{
-    width: 100%;
-    height: 100vh;
+}
+
+body {
+    /* width: 100%;
+    height: 100vh;*/
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #fff;
 }
 
 /* Header Styling */
-header{
+header {
     width: 100%;
     background-image: url(../cookbook-bgpic.png);
     background-position: center;
     background-size: cover;
     height: 40vh;
 }
-.logo{
+
+.header_container {
     width: 100%;
     position: fixed;
     background: #292929;
     display: flex;
     justify-content: space-between;
     padding-bottom: 2%;
+ 
+
 }
-.cukbuk-logo{
+
+.cukbuk-logo {
     display: flex;
     justify-content: space-between;
 }
-.logo-wrap{
+
+.logo-wrap {
     display: flex;
     padding-top: 8%;
 }
-.logo-wrap h1{
+
+.logo-wrap h1 {
     font-size: 1.5em;
     color: #fff;
     padding-top: 5%;
 }
-span{
+
+span {
     color: #2fceff;
 }
-.cukbuk-logo img{
+
+.cukbuk-logo img {
     width: 50px;
     height: 50px;
 }
-nav{
-    display: block;
+
+nav {
+    display: none;
     font-size: .8em;
     position: fixed;
-    width: 50%;
+    width: 30%;
     height: 100vh;
     line-height: 1.5;
     top: 0;
     right: 0;
     background: #292929;
 
+
 }
-nav ul{
-    text-align: right;
-    padding-top: 20%;
+
+nav ul {
+    text-align: center;
+    padding-top: 70%;
     padding-right: 10%;
+
 }
-nav ul li{
+
+
+nav ul li {
     list-style: none;
     display: block;
     margin-left: 2%;
+   
+
 }
-nav ul li a{
+
+nav ul li a {
     display: block;
     font-size: 1.3em;
     text-decoration: none;
-    font-family: 'Roboto',sans-serif;
-    padding: 4%;
+    font-family: 'Roboto', sans-serif;
     line-height: 2;
+    padding: 4%;
     color: #2fceff;
 }
-#menu-button{
+
+#menu-button {
     padding: 4%;
     font-size: 1.4em;
     color: #fff;
 }
-#exit-button{
+
+#exit-button {
     float: right;
     font-size: 1.3em;
     padding: 15px 15px 0 0;
     color: #fff
 }
-.header-h1{
+
+.header-h1 {
     width: 70%;
     margin: auto;
     text-align: center;
     padding-top: 20%;
 }
-.header-h1 h1{
+
+.header-h1 h1 {
     font-size: 1.5em;
     color: #2fceff;
     margin-top: 10%;
 }
-.header-h1 p{
+
+.header-h1 p {
     font-size: .8em;
     color: #fff;
 }
 
+/*-------------Dropdow------------*/
+.sub-menu {
+
+    display: none;
+    text-align: center;
+
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background: #292929;
+    margin-left: -15px;
+
+    width: 200px;
+
+}
+
+nav .sub-menu ul {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav ul li:hover .sub-menu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    text-align: center;
+
+}
+
+nav ul li:hover .sub-menu ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul li:hover .sub-menu ul li a:hover {
+
+    color: #2fceff;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.sub-menu-breakfast {
+    display: none;
+    margin-left: -160px;
+    width: 150px;
+}
+
+.hover-me:hover .sub-menu-breakfast {
+    display: block;
+    position: absolute;
+    background: #292929;
+    margin-top: -40px;
+
+
+
+}
 
 /* Popular Section Styling */
-.popular{
+.popular {
     background: #cccc;
 }
-.popular h2{
+
+.popular h2 {
     font-size: 1em;
     padding: 5% 0 0 5%;
     color: #2fceff;
 }
-.popular-cont{
+
+.popular-cont {
     padding: 2% 5%;
 }
-.breakfast{
+
+.breakfast {
     border: 1px solid #cccc;
 }
-.breakfast{
+
+.breakfast {
     display: flex;
     padding: 3%;
 }
-.breakfast img{
+
+.breakfast img {
     width: 200px;
     height: 100px;
     border: 1px solid #2fceff;
     border-radius: 50%;
 }
-.recipe-content{
+
+.recipe-content {
     padding: 2% 0 0 2%;
     line-height: 1.2;
 }
-.recipe-content h4{
+
+.recipe-content h4 {
     padding-bottom: 10px;
 }
-.recipe-content p{
+
+.recipe-content p {
     font-size: .8em;
 }
 
 
 /* Our Team Secion Styling */
-.team-cont{
+.team-cont {
     width: 70%;
     margin: 2% auto;
     text-align: center;
     border: #cccc 1px solid;
     border-radius: 5px;
 }
-.our-team h2{
+
+.our-team h2 {
     text-align: center;
     padding: 5% 0 4%;
     color: #2fceff;
     font-size: 1em;
 }
-.team-pic{
+
+.team-pic {
     padding-top: 3%;
 }
-.team-pic img{
+
+.team-pic img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 2px solid #2fceff;
 }
-.team-pic h4{
+
+.team-pic h4 {
     padding-bottom: 2%;
 }
-.team-pic p{
+
+.team-pic p {
     font-size: .8em;
     line-height: 1.2;
     padding-bottom: 5%;
@@ -176,10 +274,11 @@ nav ul li a{
 
 
 /* Footer Styling */
-footer{
+footer {
     background: #30363d;
 }
-.footer-cont{
+
+.footer-cont {
     width: 95%;
     height: 150px;
     margin: auto;
@@ -187,45 +286,56 @@ footer{
     justify-content: space-between;
     padding: 8% 2% 0;
 }
-.ft-contacts{
+
+.ft-contacts {
     margin-left: 1%;
 }
-.ft-contacts h4{
+
+.ft-contacts h4 {
     color: #2fceff;
     padding-top: 3%;
 }
-.ft-contacts p{
+
+.ft-contacts p {
     color: #fff;
     font-size: .7em;
     font-weight: 100;
 }
-.ft-links .nav-links{
+
+.ft-links .nav-links {
     display: flex;
     margin-left: -35%;
     padding-top: 5%;
 }
-.ft-links .nav-links a{
+
+.ft-links .nav-links a {
     text-decoration: none;
     color: #2fceff;
 }
-.ft-links .nav-links p{
+
+.ft-links .nav-links p {
     color: #2fceff;
     padding: 0 5%;
 }
-.ft-links .nav-links .stroke{
+
+.ft-links .nav-links .stroke {
     color: #fff;
 }
-.socials{
+
+.socials {
     margin-left: -10%;
     padding-top: 15%;
 }
-.socials a{
+
+.socials a {
     color: #2fceff;
 }
-.ft-bottom{
+
+.ft-bottom {
     background: #000;
 }
-.ft-bottom p{
+
+.ft-bottom p {
     text-align: center;
     font-size: .7em;
     font-weight: 100;
@@ -235,132 +345,158 @@ footer{
 
 
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
+
     /* Header Styling */
-header{
-    height: 50vh;
-}
-.logo{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-.cukbuk-logo{
-    display: flex;
-    justify-content: space-between;
-}
-.logo-wrap{
-    display: flex;
-    padding: 10% 0 0 10%;
-}
-.logo-wrap h1{
-    font-size: 1.3em;
-    color: #fff;
-    padding-top: 5%;
-}
-span{
-    color: #2fceff;
-}
-.cukbuk-logo img{
-    width: 50px;
-    height: 50px;
-}
-nav{
-    display: block;
-    font-weight: 600;
-    letter-spacing: 2px;
-    position: unset;
-    height: 70px;
-    
-}
-nav ul{
-    display: flex;
-    padding-top: 9%;
-    justify-content: flex-end;
-}
-nav ul li{
-    list-style: none;
-    padding: 0 4% 0 0;
-}
-nav ul li a{
-    display: block;
-    font-size: 1.1em;
-    color: #fff;
-}
-nav ul li a:hover{
-    color: #2fceff;
-}
-nav .current a{
-    color: #2fceff;
-    border-bottom: 2px solid #2fceff;
-}
-#menu-button, #exit-button{
-    display: none;
-}
-.header-h1{
-    width: 60%;
-}
-.header-h1 h1{
-    font-size: 1.7em;
-    color: #2fceff;
-    padding-bottom: 2%;
-    padding-top: 0%;
-}
-.header-h1 p{
-    font-size: 1em;
-    color: #fff;
-}
+    header {
+        height: 50vh;
+    }
+
+    .header_container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cukbuk-logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-wrap {
+        display: flex;
+        padding: 10% 0 0 10%;
+    }
+
+    .logo-wrap h1 {
+        font-size: 1.3em;
+        color: #fff;
+        padding-top: 5%;
+    }
+
+    span {
+        color: #2fceff;
+    }
+
+    .cukbuk-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    nav {
+        display: block;
+        font-weight: 600;
+        letter-spacing: 2px;
+        position: unset;
+        height: 70px;
+
+    }
+
+    nav ul {
+        display: flex;
+        padding-top: 9%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 0 4% 0 0;
+    }
+
+    nav ul li a {
+        display: block;
+        font-size: 1.1em;
+        color: #fff;
+    }
+
+    nav .current a {
+        color: #2fceff;
+        border-bottom: 2px solid #2fceff;
+    }
+
+    #menu-button,
+    #exit-button {
+        display: none;
+    }
+
+    .header-h1 {
+        width: 60%;
+    }
+
+    .header-h1 h1 {
+        font-size: 1.7em;
+        color: #2fceff;
+        padding-bottom: 2%;
+        padding-top: 0%;
+    }
+
+    .header-h1 p {
+        font-size: 1em;
+        color: #fff;
+    }
 
 
-/* Popular Section Styling */
-.popular h2{
-    font-size: 1.3em;
-    padding: 5% 0 0 2%;
-    color: #2fceff;
-}
-.popular-1{
-    display: flex;
-}
-.popular-1 .banku .recipe-content{
-    padding-left: 2%;
-}
-.popular-2{
-    display: flex;
-}
-.popular-2 .fufu .recipe-content{
-    padding-left: 2%;
-}
-.popular-cont{
-    padding: 2%;
-}
-.breakfast{
-    height: 150px;
-    border: 1px solid #cccc;
-}
+    /* Popular Section Styling */
+    .popular h2 {
+        font-size: 1.3em;
+        padding: 5% 0 0 2%;
+        color: #2fceff;
+    }
 
-/* Our Team Secion Styling */
-.first-team{
-    display: flex;
-}
-.second-team{
-    display: flex;
-}
-.team-cont{
-    width: 50%;
-    margin: 2%;
-}
-.our-team-cont{
-    display: flex;
-}
-.our-team h2{
-    text-align: left;
-    font-size: 1.3em;
-    padding: 5% 0 0 2%;
-    color: #2fceff;
-}
-.team-pic{
-    padding: 5%;
-}
+    .popular-1 {
+        display: flex;
+    }
+
+    .popular-1 .banku .recipe-content {
+        padding-left: 2%;
+    }
+
+    .popular-2 {
+        display: flex;
+    }
+
+    .popular-2 .fufu .recipe-content {
+        padding-left: 2%;
+    }
+
+    .popular-cont {
+        padding: 2%;
+    }
+
+    .breakfast {
+        height: 150px;
+        border: 1px solid #cccc;
+    }
+
+    /* Our Team Secion Styling */
+    .first-team {
+        display: flex;
+    }
+
+    .second-team {
+        display: flex;
+    }
+
+    .team-cont {
+        width: 50%;
+        margin: 2%;
+    }
+
+    .our-team-cont {
+        display: flex;
+    }
+
+    .our-team h2 {
+        text-align: left;
+        font-size: 1.3em;
+        padding: 5% 0 0 2%;
+        color: #2fceff;
+    }
+
+    .team-pic {
+        padding: 5%;
+    }
 
 /* Corn masala Page Styling */
 .container{
@@ -478,154 +614,219 @@ td, th {
 }
 
 
-/* Footer Styling */
-.footer-cont{
-    width: 70%;
-    height: 200px;
-}
-.ft-contacts{
-    margin-left: 0;
-}
-.ft-contacts h4{
-    font-size: 1.2em;
-}
-.ft-contacts p{
-    font-size: .9em;
-}
-.ft-links .nav-links p{
-    font-size: 1.2em;
-    padding: 0 6%;
-}
-.socials a i{
-    font-size: 1.2em;
-    padding: 2%;
-}
-.ft-bottom p{
-    font-size: 1em;
-}
+    /* Footer Styling */
+    .footer-cont {
+        width: 70%;
+        height: 200px;
+    }
+
+    .ft-contacts {
+        margin-left: 0;
+    }
+
+    .ft-contacts h4 {
+        font-size: 1.2em;
+    }
+
+    .ft-contacts p {
+        font-size: .9em;
+    }
+
+    .ft-links .nav-links p {
+        font-size: 1.2em;
+        padding: 0 6%;
+    }
+
+    .socials a i {
+        font-size: 1.2em;
+        padding: 2%;
+    }
+
+    .ft-bottom p {
+        font-size: 1em;
+    }
 }
 
-
-
-@media only screen and (min-width: 1024px){
-    /* Header Styling */
-header{
-    height: 70vh;
-}
-.logo-wrap{
-    padding: 20% 0 0 20%;
-}
-.logo-wrap h1{
-    font-size: 1.3em;
-    color: #fff;
-    padding-top: 5%;
-}
-span{
-    color: #2fceff;
-}
-.cukbuk-logo img{
-    width: 50px;
-    height: 50px;
-}
-nav{
-    display: block;
-    font-weight: 600;
-    letter-spacing: 2px;
-    position: unset;
-    height: 70px;
-    
-}
-nav ul{
-    display: flex;
-    padding-top: 9%;
-    justify-content: flex-end;
-}
-nav ul li{
-    list-style: none;
-    padding: 0 4% 0 0;
-}
-nav ul li a{
-    display: block;
-    font-size: 1.1em;
-    color: #fff;
-}
-#menu-button, #exit-button{
-    display: none;
-}
-.header-h1{
-    width: 40%;
-    padding-top: 17%;
+/*@media only screen and (max-width: 700px) {
+    nav ul li {
+        display: block;
+    }
 }
 
-.popular{
-    padding: 0 4%;
-}
+nav {
 
-/* Our Team Secion Styling */
-.our-team-cont{
-    display: flex;
-}
-}
-
-
-
-@media only screen and (min-width: 1629px){
-    /* Header Styling */
-header{
+    position: absolute;
+    background: #f44336;
     height: 100vh;
-}
-.logo-wrap{
-    padding: 20% 0 0 20%;
-}
-.logo-wrap h1{
-    font-size: 1.3em;
-    color: #fff;
-    padding-top: 5%;
-}
-nav ul{
-    display: flex;
-    padding-top: 5%;
-    justify-content: flex-end;
-}
-nav ul li{
-    list-style: none;
-    padding: 0 4% 0 0;
-}
-nav ul li a{
-    display: block;
-    font-size: 1.3em;
-    color: #fff;
-}
-.header-h1{
-    width: 100%;
-    padding-top: 15%;
-}
-.header-h1 h1{
-    font-size: 2.5em;
-    padding-bottom: 1%;
-}
-.header-h1 p{
-    font-size: 1.3em;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+
+
+}*/
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    /* Header Styling */
+    header {
+        height: 70vh;
+    }
+
+    .logo-wrap {
+        padding: 20% 0 0 20%;
+    }
+
+    .logo-wrap h1 {
+        font-size: 1.3em;
+        color: #fff;
+        padding-top: 5%;
+    }
+
+    span {
+        color: #2fceff;
+    }
+
+    .cukbuk-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    nav {
+        display: block;
+        font-weight: 600;
+        letter-spacing: 2px;
+        position: unset;
+        height: 70px;
+
+    }
+
+    nav ul {
+        display: flex;
+        padding-top: 9%;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 0 4% 0 0;
+    }
+
+    nav ul li a {
+        display: block;
+        font-size: 1.1em;
+        color: #fff;
+    }
+
+    #menu-button,
+    #exit-button {
+        display: none;
+    }
+
+    .header-h1 {
+        width: 40%;
+        padding-top: 17%;
+    }
+
+    .popular {
+        padding: 0 4%;
+    }
+
+    /* Our Team Secion Styling */
+    .our-team-cont {
+        display: flex;
+    }
 }
 
-.popular{
-    padding: 0 4%;
-}
-.popular-wrap{
-    display: flex;
-}
-.waakye .recipe-content{
-    order: 1;
-}
-.tz .recipe-content{
-    order: 1;
-}
 
-/* Our Team Secion Styling */
-.our-team-cont{
-    display: flex;
-}
 
+@media only screen and (min-width: 1629px) {
+
+    /* Header Styling */
+    header {
+        height: 100vh;
+    }
+
+    .logo-wrap {
+        padding: 20% 0 0 20%;
+    }
+
+    .logo-wrap h1 {
+        font-size: 1.3em;
+        color: #fff;
+        padding-top: 5%;
+    }
+
+    nav ul {
+        display: flex;
+        padding-top: 5%;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 0 4% 0 0;
+    }
+
+    nav ul li a {
+        display: block;
+        font-size: 1.3em;
+        color: #fff;
+    }
+
+    .header-h1 {
+        width: 100%;
+        padding-top: 15%;
+    }
+
+    .header-h1 h1 {
+        font-size: 2.5em;
+        padding-bottom: 1%;
+    }
+
+    .header-h1 p {
+        font-size: 1.3em;
+    }
+
+    .popular {
+        padding: 0 4%;
+    }
+
+    .popular-wrap {
+        display: flex;
+    }
+
+    .waakye .recipe-content {
+        order: 1;
+    }
+
+    .tz .recipe-content {
+        order: 1;
+    }
+
+    /* Our Team Secion Styling */
+    .our-team-cont {
+        display: flex;
+    }
+
+    /* Footer Styling */
+    .footer-cont {
+        width: 50%;
+        height: 200px;
+        padding-top: 3%;
+    }
+
+    .socials a i {
+        font-size: 1.2em;
+        padding: 2%;
+    }
+
+    .ft-bottom p {
+        font-size: 1.2em;
+    }
 
 /* Corn masala Page Styling */
 .container{

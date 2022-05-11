@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-image: url(/Images/pexels-pixabay-326281.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    z-index: 100;
+    position: relative;
+    
+    
+}
+.navbar{
+    width: 100%;
+    background: #292929;
+    height: 70px;
+    position: fixed;
+    z-index: 10;
+   
+}
+.navbar-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+   
+  
+}
+.recipe-logo{
+    display: flex;
+    font-size: 1rem;
+    color: #fff;
+   
+
+  
+   
+}
+span, .current {
+    color: #2fceff;
+}
+
+.recipe-logo img{
+    width: 60px;
+    height: 60px;
+}
+.recipe-logo h1{
+padding-top: 10px;
+ 
+}
+.nav ul{
+    justify-content: center;
+    align-self: center;
+    margin-top: 20px;
+   
+
+    
+}
+.nav ul li{
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+
+  
+
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+   
+}
+
+.nav ul li:after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #2fceff;
+    position: absolute; 
+   left: 50%;
+   top: 100%;
+   transition: 0.5s ;
+    
+}
+.nav ul li:hover::after{
+    width: 50%;
+    
+}
+/*.nav ul li a::after{
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: #2fceff;
+    border-radius: 2px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border: 1px solid white ;
+    transition: 0.5s;
+}*/
+
+/*-------------Dropdow------------*/
+.sub-menu {
+
+    display: none;
+    text-align: center;
+
+}
+
+.nav ul li:hover .sub-menu {
+   display: block;
+    position: absolute;
+
+    background: #292929;
+    margin-left: 5px;
+    width: 200px;
+  
+
+}
+
+.nav .sub-menu ul {
+    display: block;
+    margin-top: 20px;
+    margin-left: -20px;
+    text-align: left;
+    position: relative;
+}
+.nav .sub-menu ul li {
+    text-align: left;
+  
+}
+
+.nav ul li:hover .sub-menu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+   float: left;
+  
+  
+
+}
+
+.nav ul li:hover .sub-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.nav ul li:hover .sub-menu ul li a:hover {
+
+    color: #2fceff;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.sub-menu-breakfast, .sub-menu-lunch, .sub-menu-snacks, .sub-menu-dinner {
+    display: none;
+    margin-left: -190px;
+    width: 200px;
+}
+
+.hover-me:hover .sub-menu-breakfast, .hover-me:hover .sub-menu-lunch,.hover-me:hover .sub-menu-snacks, .hover-me:hover .sub-menu-dinner{
+    display: block;
+    position: absolute;
+    background: #292929;
+    margin-top: -40px;
+
+
+
+}
+
+.header-h1 {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  z-index: 1;
+   
+}
+
+.header-h1 h1 {
+    font-size: 62px;
+    color: #2fceff;
+  
+    
+}
+
+.header-h1 p {
+   margin: 10px 0 40px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Popular Section Styling */
+.popular {
+    background: #f8f8ff;
+  
+}
+
+.popular h2 {
+    font-size: 3em;
+    padding: 5% 0 0 5%;
+    color: #2fceff;
+    position: relative;
+    margin-bottom: 20px;
+   
+}
+/*.popular h2::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #131414;
+    border-left: 5px solid #131414;
+    transform:rotate(90deg);
+  
+}
+.popular h2::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+   
+    border-bottom: 5px solid #131414;
+    border-left: 5px solid #131414;
+    transform:rotate(-90deg);
+
+}*/
+.btn{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: #2fceff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+    text-decoration: none;}
+    .btn:hover
+{
+    background: #292929;
+}
+
+    .popular-wrap{
+        width: 90%;
+        margin: auto;
+       
+    }
+    .popular-row{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .popular img{
+        width:200px;
+        height: 200px;
+    }
+    .popular-cont{
+        flex-basis: 25%;
+        padding: 10px;
+        margin-top: 10px;
+        min-width: 200px;
+        text-align: center;
+        transition: transform 0.5s;
+        
+    }
+    .popular-cont:hover{
+        transform: translateY(-5px);
+    }
+
+
+
+
+.recipe-content {
+    padding: 2% 0 0 2%;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.recipe-content h4 {
+    padding-bottom: 10px;
+}
+
+.recipe-content p {
+    font-size: 1em;
+
+}
+
+
+/* Our Team Secion Styling */
+.our-team-wrap{
+    width: 90%;
+    margin: 2% auto;
+
+}
+.our-team-cont{
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-around;
+  
+}
+.team-cont {
+   
+    flex-basis: 25%;
+    max-width: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border: #cccc 1px solid;
+    border-radius: 5px;
+}
+.team-cont:hover, .team-cont p:hover{
+    background: #2fceff;
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.our-team h2 {
+   
+    font-size: 3em;
+    padding: 5% 0 0 5%;
+    color: #2fceff;
+    margin-bottom: 20px;
+}
+
+.team-pic {
+    padding-top: 3%;
+}
+
+.team-cont img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #2fceff;
+}
+
+.team-pic h4 {
+    padding-bottom: 2%;
+}
+
+.team-pic p {
+    font-size: 1em;
+    line-height: 1.2;
+    padding-bottom: 5%;
+}
+
+.about{
+    width: 70%;
+    margin: 4% auto;
+   
+}
+.about .about-container{
+    display: flex;
+
+
+}
+.about-content h1{
+    font-size: 2em;
+    color: #2fceff;
+
+}
+.about-content p{
+    margin-top: 20px;
+}
+.about .about-container{
+    flex-basis: 50%;
+}
+.about .about-container .about-img img{
+
+ width: 200px;
+ border-radius: 20px;
+ margin: 20px;
+
+}
+.about-btn{
+
+}
+
+footer {
+    background: #30363d;
+  
+    
+}
+
+.footer-cont {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+ 
+}
+
+.ft-contacts {
+ 
+    margin-left: 1%;
+   
+ 
+}
+
+.ft-contacts h4 {
+    color: #2fceff;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.ft-contacts p {
+    color: #fff;
+    font-size: .8em;
+    font-weight: 100;
+    line-height: 2;
+}
+
+.ft-links .nav-links {
+    display: flex;
+    margin-left: -35%;
+    padding-top: 5%;
+}
+
+.ft-links .nav-links a {
+    text-decoration: none;
+    color: #2fceff;
+}
+
+.ft-links .nav-links p {
+    color: #2fceff;
+    padding: 0 5%;
+}
+
+.ft-links .nav-links .stroke {
+    color: #fff;
+}
+
+.socials {
+    margin-left: -10%;
+    padding-top: 15%;
+}
+
+.socials a {
+    color: #2fceff;
+}
+
+.ft-bottom {
+    background: #000;
+}
+
+.ft-bottom p {
+    text-align: center;
+    font-size: .7em;
+    font-weight: 100;
+    color: #fff;
+    padding: 2%;
+}
+
+
+@media (max-width: 992px) {
+    .popular-row{
+       flex-wrap: wrap;
+    }
+    .our-team-cont{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 768px) {
+   
+
+    
+    
+}

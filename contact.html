@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style1.css">
-    <link rel="stylesheet" href="/css/recipe2.css">
+    <!--<link rel="stylesheet" href="/css/recipe2.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>CookBook</title>
 </head>
@@ -14,7 +14,7 @@
 <body>
     <!-- Header Coding -->
 
-    <header>
+    <header class="contact-bg">
         <div class="navbar">
             <div class="navbar-container">
                 <div class=" recipe-logo">
@@ -22,17 +22,26 @@
                     <h1>Recipes<span>Blog</span></h1>
                 </div>
 
-                <div class="nav">
-
+                <div class="nav" id="navLinks">
                     <ul>
                         <li class="current"><a href="index1.html" class="">HOME</a></li>
-                        <li><a href="#" class="">ABOUT</a></li>
-                        <li><a href="#" class="">RECIPES</a>
+                        <li><a href="about.html" class="">ABOUT</a></li>
+                        <li><a href="#" class="">RECIPES<i class="fa-solid fa-caret-down"></i></a>
                             <div class="sub-menu">
-                                <ul class="sub-menu-ul">
-                                    <li class="hover-me"><a href="#">Breakfast</a><i
-                                            class="fa-solid fa-angle-right"></i>
-                                        <div class="sub-menu-breakfast">
+                                <ul>
+                                    <li class="hover-me"><a href="/breakfast.html">Breakfast</a>
+                                        <div class="sub-menu-1">
+                                            <ul>
+                                                <li><a href="/avocado.html">Avocado Pratha</a></li>
+                                                <li><a href="/pancake.html">Banana Pancake</a></li>
+                                                <li><a href="/upma.html">Bread Upma</a></li>
+                                                <li><a href="/poha.html">Poha</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li class="hover-me"><a href="/lunch.html">Lunch</a>
+                                        <div class="sub-menu-1">
                                             <ul>
                                                 <li><a href="/paneer.html">Chilli Paneer</a></li>
                                                 <li><a href="/schezwan.html">Schezwan Fried Rice</a></li>
@@ -40,10 +49,9 @@
                                                 <li><a href="/momos.html">Vegetable Momos</a></li>
                                             </ul>
                                         </div>
-
                                     </li>
-                                    <li class="hover-me"><a href="#">Lunch</a>
-                                        <div class="sub-menu-lunch">
+                                    <li class="hover-me"><a href="/schezwan.html">Snacks</a>
+                                        <div class="sub-menu-1">
                                             <ul>
                                                 <li><a href="/pakora.html">Paneer Pakora</a></li>
                                                 <li><a href="/tikka.html">Paneer Tikka</a></li>
@@ -52,18 +60,8 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="hover-me"><a href="#">Snacks</a>
-                                        <div class="sub-menu-snacks">
-                                            <ul>
-                                                <li><a href="/pakora.html">Paneer Pakora</a></li>
-                                                <li><a href="/tikka.html">Paneer Tikka</a></li>
-                                                <li><a href="/puff.html">Vegetable Puff</a></li>
-                                                <li><a href="/vegpakora.html">Vegetable Pakora</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="hover-me"><a href="#">Dinner</a>
-                                        <div class="sub-menu-dinner">
+                                    <li class="hover-me"><a href="/dinner.html">Dinner</a>
+                                        <div class="sub-menu-1">
                                             <ul>
                                                 <li><a href="/bhatura.html">Bhatura</a></li>
                                                 <li><a href="/kulcha.html">Kulcha</a></li>
@@ -74,28 +72,47 @@
                                     </li>
                                 </ul>
                             </div>
-
-
-
                         </li>
-                        <li><a href="#" class="">CONTACT</a></li>
+                        <li><a href="/contact.html" class="">CONTACT</a></li>
                     </ul>
+                    <i class="fa-solid fa-xmark exit" id="exit-button" onclick="hideMenu()"></i>
                 </div>
+                <i class="fa-solid fa-bars menu-btn" id="menu-button" onclick="showMenu()"></i>
             </div>
         </div>
 
         <div class="header-h1">
 
-            <h1>About Us</h1>
-
-            <a href="#" class="btn">Click to know More</a>
+            <h1>Contact Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. quibusdam eius facilis nemo.</p>
+            <a href="index1.html" class="btn">Learn more</a>
         </div>
 
     </header>
-    <section class="about">
-        
-        
-    </section>
+    <section class="contact-info" id="contact-info">
+    <div class="contact-container">
+        <div class="title">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam asperiores corrupti nobis!</p>
+        </div>
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Message"></textarea>
+            </div>
+                    <div class="inputBox">
+                        <input type="submit" placeholder="Name">
+                    </div>
+               </div>
+    
+            </div>
+        </section>
 
     <footer>
         <div class="footer-cont">
@@ -130,3 +147,7 @@
             <p>Recipes<span>Blog</span> | All Rights Reserved</p>
         </div>
     </footer>
+    <script src="/app.js"></script>
+</body>
+
+</html>

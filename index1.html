@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style1.css">
-    <link rel="stylesheet" href="/css/recipe2.css">
+    <!--<link rel="stylesheet" href="/css/recipe2.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>CookBook</title>
 </head>
@@ -21,18 +21,27 @@
                     <img src="./cookbook-LOGO.png" alt="">
                     <h1>Recipes<span>Blog</span></h1>
                 </div>
-
-                <div class="nav">
-                    
+               
+                <div class="nav" id="navLinks">
                     <ul>
                         <li class="current"><a href="index1.html" class="">HOME</a></li>
-                        <li><a href="#" class="">ABOUT</a></li>
-                        <li><a href="#" class="">RECIPES</a>
+                        <li><a href="about.html" class="">ABOUT</a></li>
+                        <li><a href="#" class="">RECIPES<i class="fa-solid fa-caret-down"></i></a>
                             <div class="sub-menu">
-                                <ul class="sub-menu-ul">
-                                    <li class="hover-me"><a href="#">Breakfast</a><i
-                                            class="fa-solid fa-angle-right"></i>
-                                        <div class="sub-menu-breakfast">
+                                <ul>
+                                    <li class="hover-me"><a href="/breakfast.html">Breakfast</a>
+                                        <div class="sub-menu-1">
+                                            <ul>
+                                                <li><a href="/avocado.html">Avocado Pratha</a></li>
+                                                <li><a href="/pancake.html">Banana Pancake</a></li>
+                                                <li><a href="/upma.html">Bread Upma</a></li>
+                                                <li><a href="/poha.html">Poha</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li class="hover-me"><a href="/lunch.html">Lunch</a>
+                                        <div class="sub-menu-1">
                                             <ul>
                                                 <li><a href="/paneer.html">Chilli Paneer</a></li>
                                                 <li><a href="/schezwan.html">Schezwan Fried Rice</a></li>
@@ -40,10 +49,9 @@
                                                 <li><a href="/momos.html">Vegetable Momos</a></li>
                                             </ul>
                                         </div>
-
                                     </li>
-                                    <li class="hover-me"><a href="#">Lunch</a>
-                                        <div class="sub-menu-lunch">
+                                    <li class="hover-me"><a href="/snacks.html">Snacks</a>
+                                        <div class="sub-menu-1">
                                             <ul>
                                                 <li><a href="/pakora.html">Paneer Pakora</a></li>
                                                 <li><a href="/tikka.html">Paneer Tikka</a></li>
@@ -52,18 +60,8 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="hover-me"><a href="#">Snacks</a>
-                                        <div class="sub-menu-snacks">
-                                            <ul>
-                                                <li><a href="/pakora.html">Paneer Pakora</a></li>
-                                                <li><a href="/tikka.html">Paneer Tikka</a></li>
-                                                <li><a href="/puff.html">Vegetable Puff</a></li>
-                                                <li><a href="/vegpakora.html">Vegetable Pakora</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="hover-me"><a href="#">Dinner</a>
-                                        <div class="sub-menu-dinner">
+                                    <li class="hover-me"><a href="/dinner.html">Dinner</a>
+                                        <div class="sub-menu-1">
                                             <ul>
                                                 <li><a href="/bhatura.html">Bhatura</a></li>
                                                 <li><a href="/kulcha.html">Kulcha</a></li>
@@ -74,27 +72,26 @@
                                     </li>
                                 </ul>
                             </div>
-
-
-
                         </li>
-                        <li><a href="#" class="">CONTACT</a></li>
+                        <li><a href="/contact.html" class="">CONTACT</a></li>
                     </ul>
+                    <i class="fa-solid fa-xmark exit" id="exit-button" onclick="hideMenu()"></i>
                 </div>
+                <i class="fa-solid fa-bars menu-btn" id="menu-button" onclick="showMenu()"></i>
             </div>
         </div>
 
         <div class="header-h1">
 
-            <h1>Welcome Home</h1>
+            <h1>Welcome To Our Recipe Blog</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. quibusdam eius facilis nemo.</p>
-            <a href="#" class="btn">Visit us to know More</a>
+            <a href="#popular" class="btn">Visit us to know More</a>
         </div>
 
     </header>
 
     <!-- Popular Coding -->
-    <section class="popular">
+    <section class="popular" id="popular">
         <h2>Popular recipes</h2>
         <div class="popular-wrap">
             <div class="popular-row">
@@ -201,7 +198,7 @@
                 <div class="nav-links">
                     <p><a href="index1.html" class="">Home</a></p>
                     <p class="stroke">|</p>
-                    <p><a href="#" class="">Recipes</a></p>
+                    <p><a href="#popular" class="">Recipes</a></p>
                 </div>
                 <div class="socials">
                     <a href="#" target="_blank" class=""><i class="fa-brands fa-facebook face"
@@ -222,20 +219,7 @@
             <p>Recipes<span>Blog</span> | All Rights Reserved</p>
         </div>
     </footer>
-    <script>
-
-        function showMenu() {
-            var navLinks = document.getElementById("navLinks");
-            navLinks.style.display = "block";
-
-        }
-
-        function hideMenu() {
-            var navLinks = document.getElementById("navLinks");
-            navLinks.style.display = "none";
-
-        }
-    </script>
+    <script src="/app.js"></script>
 </body>
 
 </html>

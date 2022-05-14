@@ -85,20 +85,21 @@ padding-top: 10px;
     justify-content: center;
     align-self: center;
     margin-top: 20px;
-   
-   
-
+    padding-left: 0px;
     
 }
+
 .nav ul li{
   list-style: none;
   display: inline-block;
   text-align: center;
   position: relative;
+  width: 100%;
 
   
 
 }
+
 .nav ul li a{
     text-decoration: none;
     margin-left: 40px;
@@ -160,12 +161,7 @@ padding-top: 10px;
 
 /*========== Dropdown Page Starts===============*/
 
-.sub-menu {
 
-    display: none;
-    text-align: center;
-
-}
 .nav ul li a i{
     margin-left: .2em;
 }
@@ -173,25 +169,9 @@ padding-top: 10px;
     margin-right: .2em;
 }
 
-.nav ul li:hover .sub-menu {
-   display: block;
-    position: absolute;
-    background: #292929;
-    margin-left: 5px;
-    width: 200px;
-  
 
-}
-
-.nav .sub-menu ul {
-    display: block;
-    margin-top: 20px;
-    margin-left: -20px;
-    text-align: left;
-    position: relative;
-}
 .nav .sub-menu ul li {
-    text-align: left;
+    text-align: center;
   
 }
 .nav .sub-menu-1 ul li  a{
@@ -204,11 +184,13 @@ padding-top: 10px;
     padding: 10px;
     border-bottom: 1px dotted white;
     background: transparent;
-   float: left;
-  
+    
+/*    float: left;
+   */
   
 
 }
+
 
 .nav ul li:hover .sub-menu ul li:last-child {
     border-bottom: none;
@@ -220,24 +202,7 @@ padding-top: 10px;
 }
 
 
-.sub-menu-1 {
-    display: none;
-    margin-left: -190px;
-    width: 180px;
-    border-right:2px solid #2fceff;
-    border-top:2px solid #2fceff;
-}
 
-
-.hover-me:hover .sub-menu-1{
-    display: block;
-    position: absolute;
-    background: #292929;
-    margin-top: -12px;
-   
-   
-
-}
 /*========== Dropdown Page Ends===============*/
 
 .header-h1 {
@@ -278,7 +243,7 @@ padding-top: 10px;
     margin-bottom: 20px;
    
 }
-.popular h2::before {
+/* .popular h2::before {
     content: '';
     position: absolute;
     width: 30px;
@@ -302,7 +267,7 @@ padding-top: 10px;
     left: 360px;
     transform:rotate(-90deg);
 
-}
+} */
 
 
     .popular-wrap{
@@ -849,13 +814,7 @@ footer {
     .team-cont{
       flex-basis: 100%;
     }
-    .nav ul{
-       position: absolute;
-       top: 20%;
-       right: 25%;
-       transform: translate(-20%, -25%);
-       text-align: center;
-    }
+    
     
     .nav{
 
@@ -867,16 +826,12 @@ footer {
         right: 0;
         text-align: left;
     }
-    .nav ul li:hover .sub-menu{
-   display: block;
-
-  
-    }
+    
     
     
     .nav ul li a{
         display: block;
-        padding: 20%;
+        padding: 10%;
         color: #2fceff;
         text-align: center;
     }
@@ -897,10 +852,34 @@ footer {
         top: 80%;
        }
        .contact-info {
-         background:none
+         background:none;
     }
     .contactForm {
         margin: 50px auto;
+    }
+    
+    .sub-menu {
+
+        display: none;
+        text-align: center;
+    
+    }
+   
+    .nav ul li:hover .sub-menu {
+        display: block;
+        
+     }
+     .sub-menu-1 {
+        display: none;
+        
+    }
+   
+    
+    .hover-me:hover .sub-menu-1{
+        display: block;
+       
+       
+    
     }
 }
 
@@ -909,6 +888,57 @@ footer {
      top: 82%;
     }
 
+}
+@media screen and (min-width: 768px) {
+
+
+    .sub-menu {
+
+        display: none;
+        text-align: center;
+    
+    }
+   
+    .nav ul li:hover .sub-menu {
+        display: block;
+         position: absolute;
+         background: #292929;
+         margin-left: 5px;
+         width: 200px;
+        
+     }
+     .sub-menu-1 {
+        display: none;
+        margin-left: -190px;
+        width: 180px;
+        border-right:2px solid #2fceff;
+        border-top:2px solid #2fceff;
+    }
+   
+    
+    .hover-me:hover .sub-menu-1{
+        display: block;
+        position: absolute;
+        background: #292929;
+        margin-top: -12px;
+       
+    
+    }
+    /* .nav .sub-menu ul {
+        display: block;
+        margin-top: 20px;
+        margin-left: -20px;
+  
+        position: relative;
+    }
+     */
+    
+    .nav ul li{
+        width: fit-content;
+    }
+    nav .sub-menu ul li {
+    
+    }
 }
     
     

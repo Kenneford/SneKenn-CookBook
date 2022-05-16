@@ -24,7 +24,7 @@
 
 header {
     width: 100%;
-    background-image: url(../images/pexels-pixabay-326281.jpg);
+    background-image: url(../Images/pexels-pixabay-326281.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -35,16 +35,16 @@ header {
 }
 
 .aboutbg {
-    background-image: url(/images/about-bg.jpg);
+    background-image: url(../Images/about-bg.jpg);
 
 }
 
 .contact-bg {
-    background-image: url(/images/contact-bg1.jpg);
+    background-image: url(../Images/contact-bg1.jpg);
 }
 
 .breakfast_bg {
-    background-image: url(/images/Breakfast/breakfast_bg.jpg);
+    background-image: url(../Images/Breakfast/breakfast_bg.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -514,7 +514,7 @@ span,
 }
 
 .recipe_img {
-    background-image: url(../images/Breakfast/pexels-shantanu-pal-2679501.jpg);
+    background-image: url(../Images/Breakfast/pexels-shantanu-pal-2679501.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -526,93 +526,93 @@ span,
 }
 
 .img_avocado {
-    background-image: url(/images/Breakfast/avocado_paratha.jpg);
+    background-image: url(../Images/Breakfast/avocado_paratha.jpg);
 
 }
 
 .img_pancake {
-    background-image: url(/images/Breakfast/pancake.jpg);
+    background-image: url(../Images/Breakfast/pancake.jpg);
 }
 
 .img_poha {
-    background-image: url(/images/Breakfast/Poha/IMG-3152.jpg);
+    background-image: url(../Images/Breakfast/Poha/IMG-3152.jpg);
 
 
 }
 
 .img_upma {
-    background-image: url(/images/Breakfast/bread-upma-featured.jpg);
+    background-image: url(../Images/Breakfast/bread-upma-featured.jpg);
 
 
 }
 
 .img_pakora {
-    background-image: url(/images/Snacks/paneerpakora.jpg);
+    background-image: url(../Images/Snacks/paneerpakora.jpg);
 
 
 }
 
 .img_tikka {
-    background-image: url(/images/Snacks/tikka.jpg);
+    background-image: url(../Images/Snacks/tikka.jpg);
 
 
 }
 
 .img_puff {
-    background-image: url(/images/Snacks/puff.JPG);
+    background-image: url(../Images/Snacks/puff.JPG);
 
 
 }
 
 .img_veg_pakora {
-    background-image: url(/images/Snacks/vegpakora.JPG);
+    background-image: url(../Images/Snacks/vegpakora.JPG);
 
 
 }
 
 .img_schezwan {
-    background-image: url(/images/Lunch/schezwan_rice.jpg);
+    background-image: url(../Images/Lunch/schezwan_rice.jpg);
 
 
 }
 
 .img_biryani {
-    background-image: url(/images/Lunch/Biryani.jpg);
+    background-image: url(../Images/Lunch/Biryani.jpg);
 
 
 }
 
 .img_momos {
-    background-image: url(/images/Lunch/momo.jpg);
+    background-image: url(../Images/Lunch/momo.jpg);
 
 
 }
 
 .img_paneer {
-    background-image: url(/images/Lunch/chillipaneer.JPG);
+    background-image: url(../Images/Lunch/chillipaneer.JPG);
 }
 
 
 .img_bhatura {
-    background-image: url(/images/Dinner/Bhatura/IMG-3101.JPG);
+    background-image: url(../Images/Dinner/Bhatura/IMG-3101.JPG);
 
 
 }
 
 .img_kulcha {
-    background-image: url(/images/Dinner/Kulcha/IMG-3132.JPG);
+    background-image: url(../Images/Dinner/Kulcha/IMG-3132.JPG);
 
 
 }
 
 .img_matar_paneer {
-    background-image: url(/images/Dinner/IMG-3110.JPG);
+    background-image: url(../Images/Dinner/IMG-3110.JPG);
 
 
 }
 
 .img_butter_masala {
-    background-image: url(/images/Dinner/IMG-3120.JPG);
+    background-image: url(../Images/Dinner/IMG-3120.JPG);
 
 
 }

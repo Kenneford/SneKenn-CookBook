@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     border: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-.btn{
+
+.btn {
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -14,12 +15,14 @@
     margin: 30px 0;
     border-radius: 30px;
     transition: background 0.5s;
-    text-decoration: none;}
-    .btn:hover
-{
+    text-decoration: none;
+}
+
+.btn:hover {
     background: #292929;
 }
-header{
+
+header {
     width: 100%;
     background-image: url(../images/pexels-pixabay-326281.jpg);
     background-position: center;
@@ -27,89 +30,102 @@ header{
     height: 100vh;
     z-index: 100;
     position: relative;
-    
-    
+
+
 }
-.aboutbg{
+
+.aboutbg {
     background-image: url(/images/about-bg.jpg);
+
 }
- .contact-bg{
+
+.contact-bg {
     background-image: url(/images/contact-bg1.jpg);
 }
-.breakfast_bg{
+
+.breakfast_bg {
     background-image: url(/images/Breakfast/breakfast_bg.jpg);
     background-position: center;
     background-size: cover;
 }
 
- 
-.navbar{
+
+.navbar {
     width: 100%;
     background: #292929;
     height: 80px;
     position: fixed;
     z-index: 10;
-   
+
 }
-.navbar-container{
+
+.navbar-container {
     width: 90%;
     margin: 10px auto;
     display: flex;
     justify-content: space-between;
-  
-   
-  
+
+
+
 }
-.recipe-logo{
+
+.recipe-logo {
     display: flex;
     font-size: 1rem;
     color: #fff;
-   
+
 }
-.nav{
+
+.nav {
     text-align: center;
 }
-span, .current {
+
+span,
+.current {
     color: #2fceff;
 }
 
-.recipe-logo img{
+.recipe-logo img {
     width: 60px;
     height: 60px;
 }
-.recipe-logo h1{
-padding-top: 10px;
- 
+
+.recipe-logo h1 {
+    padding-top: 10px;
+
 }
-.nav ul{
+
+.nav ul {
     justify-content: center;
     align-self: center;
     margin-top: 20px;
     padding-left: 0px;
-    
-}
-
-.nav ul li{
-  list-style: none;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  width: 100%;
-
-  
 
 }
 
-.nav ul li a{
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+
+
+}
+
+.nav ul li a {
     text-decoration: none;
     margin-left: 40px;
     color: #fff;
     font-size: 1rem;
     font-weight: 700;
     position: relative;
-   
+
+
 }
-.nav ul li a:hover{
+
+.nav ul li a:hover {
     color: #2fceff;
 }
 
@@ -162,33 +178,30 @@ padding-top: 10px;
 /*========== Dropdown Page Starts===============*/
 
 
-.nav ul li a i{
+.nav ul li a i {
     margin-left: .2em;
 }
-.sub.menu ul li a i{
+
+.sub-menu ul li a i {
     margin-right: .2em;
 }
 
 
 .nav .sub-menu ul li {
     text-align: center;
-  
+
 }
-.nav .sub-menu-1 ul li  a{
+
+.nav .sub-menu-1 ul li a {
     display: contents;
 }
 
 
 .nav ul li:hover .sub-menu ul li {
     width: 150px;
-    padding: 10px;
+    padding: 12px;
     border-bottom: 1px dotted white;
     background: transparent;
-    
-/*    float: left;
-   */
-  
-
 }
 
 
@@ -206,25 +219,25 @@ padding-top: 10px;
 /*========== Dropdown Page Ends===============*/
 
 .header-h1 {
-  width: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  z-index: 1;
-   
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    margin-top: 40px;
+
 }
 
 .header-h1 h1 {
-    font-size: 62px;
+    font-size: 56px;
     color: #2fceff;
-  
-    
+
 }
 
 .header-h1 p {
-   margin: 10px 0 40px;
+    margin: 10px 0 40px;
     color: #fff;
     font-size: 14px;
 }
@@ -232,7 +245,7 @@ padding-top: 10px;
 /*========== Popular Page Starts===============*/
 .popular {
     background: #f8f8ff;
-  
+
 }
 
 .popular h2 {
@@ -241,8 +254,9 @@ padding-top: 10px;
     color: #2fceff;
     position: relative;
     margin-bottom: 20px;
-   
+
 }
+
 /* .popular h2::before {
     content: '';
     position: absolute;
@@ -270,57 +284,64 @@ padding-top: 10px;
 } */
 
 
-    .popular-wrap{
-        width: 90%;
-        margin: auto;
-       
-    }
-    .popular-row{
-        display: flex;
-        align-items: center;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-    }
-    .popular img{
-        width: 200px;
-        height: 200px;
-        border-radius: 20px;
-      
-    }
-    .popular img:hover{
-      transform: scale(1.2);
-    }
-    .popular-cont{
-        flex-basis: 25%;
-        padding: 10px;
-        margin-top: 20px;
-        min-width: 200px;
-        text-align: center;
-        transition: transform 0.5s;
-        
-        
-    }
-    .popular-cont:hover{
-        transform: translateY(-5px);
-    }
+.popular-wrap {
+    width: 90%;
+    margin: auto;
+
+}
+
+.popular-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.popular img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+
+}
+
+.popular img:hover {
+    transform: scale(1.2);
+}
+
+.popular-cont {
+    flex-basis: 25%;
+    padding: 10px;
+    margin-top: 20px;
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.5s;
+
+
+}
+
+.popular-cont:hover {
+    transform: translateY(-5px);
+}
 
 /*========== Popular Page Ends===============*/
 
 /*========== Team Page Starts===============*/
-.our-team-wrap{
+.our-team-wrap {
     width: 90%;
     margin: 2% auto;
-    
+
 
 }
-.our-team-cont{
+
+.our-team-cont {
     display: flex;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     justify-content: space-around;
-  
+
 }
+
 .team-cont {
-   
+
     flex-basis: 25%;
     max-width: 250px;
     padding: 10px;
@@ -329,7 +350,9 @@ padding-top: 10px;
     border: #cccc 1px solid;
     border-radius: 5px;
 }
-.team-cont:hover, .team-cont p:hover{
+
+.team-cont:hover,
+.team-cont p:hover {
     background: #2fceff;
     color: #fff;
     cursor: pointer;
@@ -337,7 +360,7 @@ padding-top: 10px;
 }
 
 .our-team h2 {
-   
+
     font-size: 3em;
     padding: 5% 0 0 5%;
     color: #2fceff;
@@ -365,66 +388,74 @@ padding-top: 10px;
     line-height: 1.2;
     padding-bottom: 5%;
 }
+
 /*========== Team Page Ends===============*/
 /*========== Recipe Page Starts===============*/
-.about{
+.about {
     width: 90%;
     margin: 6% auto;
-  
-   
+
+
 }
-.about .about-container{
+
+.about .about-container {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-   
-    
+
+
 }
-.about-content{
+
+.about-content {
     flex-basis: 50%;
     max-width: 400px;
 }
 
 
-.about-content h1{
+.about-content h1 {
     font-size: 2em;
     color: #2fceff;
 
 }
-.about-content p{
+
+.about-content p {
     margin-top: 20px;
 }
-.about .about-content img{
+
+.about .about-content img {
 
     width: 100%;
     border-radius: 20px;
-  
-   
-   }
+
+
+}
 
 /*========== About Page Ends===============*/
 /*========== Contact Page Starts===============*/
 
-.contact-container{
+.contact-container {
     width: 90%;
     margin: 4% auto;
 }
-.contact-info{
+
+.contact-info {
     background: url(/images/bg3.jpg);
     background-size: cover;
     background-position: center;
-    
+
 }
-.contactForm{
+
+.contactForm {
     padding: 75px 50px;
     background: #fff;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     margin-top: 50px;
 
 }
-.title h2{
+
+.title h2 {
     color: #2fceff;
     font-size: 3em;
     margin-bottom: 20px;
@@ -433,19 +464,22 @@ padding-top: 10px;
 }
 
 
-.contactForm h3{
+.contactForm h3 {
     color: #2fceff;
     font-size: 1.5em;
     margin-bottom: 20px;
     font-weight: 500;
 
 }
-.contactForm .inputBox{
+
+.contactForm .inputBox {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
 }
-.contactForm .inputBox input, .contactForm .inputBox textarea{
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
     width: 100%;
     border: 1px solid #555;
     padding: 10px;
@@ -455,7 +489,8 @@ padding-top: 10px;
     font-weight: 300;
     resize: none;
 }
-.contactForm .inputBox input[type ="submit"]{
+
+.contactForm .inputBox input[type="submit"] {
     font-size: 1em;
     color: #fff;
     background: #2fceff;
@@ -472,13 +507,13 @@ padding-top: 10px;
 /*========== Contact Page Ends===============*/
 /*========== Recipe Page Starts===============*/
 
-.recipe_container{
+.recipe_container {
     width: 80%;
     margin: auto;
-  
+
 }
 
-.recipe_img{
+.recipe_img {
     background-image: url(../images/Breakfast/pexels-shantanu-pal-2679501.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -486,147 +521,176 @@ padding-top: 10px;
     height: 80vh;
     width: 100%;
     position: relative;
-   
-   
+
+
 }
-.img_avocado{
+
+.img_avocado {
     background-image: url(/images/Breakfast/avocado_paratha.jpg);
-    
+
 }
-.img_pancake{
+
+.img_pancake {
     background-image: url(/images/Breakfast/pancake.jpg);
 }
-.img_poha{
+
+.img_poha {
     background-image: url(/images/Breakfast/Poha/IMG-3152.jpg);
-   
-    
+
+
 }
-.img_upma{
+
+.img_upma {
     background-image: url(/images/Breakfast/bread-upma-featured.jpg);
-   
-    
+
+
 }
- .img_pakora{
+
+.img_pakora {
     background-image: url(/images/Snacks/paneerpakora.jpg);
-   
-    
+
+
 }
-.img_tikka{
+
+.img_tikka {
     background-image: url(/images/Snacks/tikka.jpg);
-   
-    
+
+
 }
-.img_puff{
+
+.img_puff {
     background-image: url(/images/Snacks/puff.JPG);
-   
-    
+
+
 }
-.img_veg_pakora{
+
+.img_veg_pakora {
     background-image: url(/images/Snacks/vegpakora.JPG);
-   
-    
+
+
 }
-.img_schezwan{
+
+.img_schezwan {
     background-image: url(/images/Lunch/schezwan_rice.jpg);
-   
-    
+
+
 }
-.img_biryani{
+
+.img_biryani {
     background-image: url(/images/Lunch/Biryani.jpg);
-   
-    
+
+
 }
-.img_momos{
+
+.img_momos {
     background-image: url(/images/Lunch/momo.jpg);
-   
-    
+
+
+}
+
+.img_paneer {
+    background-image: url(/images/Lunch/chillipaneer.JPG);
 }
 
 
-.img_bhatura{
+.img_bhatura {
     background-image: url(/images/Dinner/Bhatura/IMG-3101.JPG);
-   
-    
+
+
 }
-.img_kulcha{
+
+.img_kulcha {
     background-image: url(/images/Dinner/Kulcha/IMG-3132.JPG);
-   
-    
+
+
 }
-.img_matar_paneer{
+
+.img_matar_paneer {
     background-image: url(/images/Dinner/IMG-3110.JPG);
-   
-    
+
+
 }
-.img_butter_masala{
+
+.img_butter_masala {
     background-image: url(/images/Dinner/IMG-3120.JPG);
-   
-    
-} 
+
+
+}
+
 /*  */
-.recipe_img_container{
+.recipe_img_container {
     width: 100%;
-    background:rgba(240, 235, 235, 0.2);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+    background: rgba(240, 235, 235, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
     backdrop-filter: blur(.4rem);
     padding: 1.6rem;
     border-radius: 0.5rem;
     position: absolute;
     top: 83%
 }
-.recipe_title{
+
+.recipe_title {
     text-align: center;
     color: #2fceff;
- }
- .recipe_name{
+}
+
+.recipe_name {
     font-size: 36px;
 }
-.recipe_title p span{
- color: #fff;
- font-size: 26px;
- font-weight: 900;
+
+.recipe_title p span {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 900;
 }
-.recipe_title p{
+
+.recipe_title p {
     padding-top: 10px;
     font-size: 26px;
     font-weight: 900;
 }
-.recipe_content{
-   
-    padding-top: 4rem ;
-  
+
+.recipe_content {
+
+    padding-top: 4rem;
+
 }
-.recipe_content h3{
-   padding-bottom:1% ;
+
+.recipe_content h3 {
+    padding-bottom: 1%;
     color: #2fceff;
     font-weight: 800;
     font-size: 2.5rem;
 }
-.recipe_content p{
-    font-size: 20px;
-    line-height: 1.2;
+
+.recipe_content p {
+    font-size: 17px;
+
 }
-.instruction{
+
+.instruction {
     border: 3px solid #2fceff;
     width: 60%;
     margin: 30px auto;
     border-radius: 20px;
     box-shadow: 5px 10px 8px #888888;
 }
-.instruction ul{
-  
+
+.instruction ul {
+
     padding-left: 12px;
 }
-.instruction h3{
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
- font-size: 20px;
+
+.instruction h3 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    font-size: 20px;
     font-weight: 900;
 }
 
-.instruction ul li{
- 
+.instruction ul li {
+
     border-bottom: 1px solid rgba(51, 51, 51, 0.07);
     font-size: 15px;
     font-weight: 500;
@@ -637,11 +701,12 @@ padding-top: 10px;
     color: gray;
     position: relative;
     list-style: none;
- 
-    
+
+
 
 }
-.instruction ul li::before{
+
+.instruction ul li::before {
     content: "";
     border: 2px solid #2fceff;
     border-radius: 30px;
@@ -651,7 +716,8 @@ padding-top: 10px;
     width: 6px;
     top: 13px;
 }
-.method  .steps{
+
+.method .steps {
     border-bottom: 1px solid rgba(51, 51, 51, 0.07);
     font-size: 17px;
     line-height: 25px;
@@ -659,57 +725,63 @@ padding-top: 10px;
     margin-bottom: 12px;
     list-style: none;
     z-index: 10;
-   
-   
-}
-.method h3{
-    font-size: 20px;
-     padding-top: 30px;
-  padding-bottom: 12px;
-  
-  margin-bottom: 12px;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.07);
+
+
 }
 
-.method img{
+.method h3 {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 12px;
+
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.07);
+}
+
+.method img {
     width: 40%;
     height: 40%;
-border-radius: 20px;
-   border: 3px solid #2fceff;
+    border-radius: 20px;
+    border: 3px solid #2fceff;
     display: block;
     margin: auto;
-  
- 
+
+
 }
-.steps{
+
+.steps {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
-.method .sub_steps{
+
+.method .sub_steps {
     border-bottom: 1px solid rgba(51, 51, 51, 0.07);
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 17px;
-    
-   
+
+
 }
-.step_recipe, .step_img{
+
+.step_recipe,
+.step_img {
     flex-basis: 50%;
 }
 
-.img_container{
+.img_container {
     display: flex;
 }
+
 /*========== Recipe Page Ends===============*/
-   
+
 /*========== Footer Page Starts===============*/
 
 footer {
     background: #30363d;
-   
-    
+
+
 }
 
 .footer-cont {
@@ -720,14 +792,14 @@ footer {
     justify-content: space-between;
     align-items: flex-end;
 }
- 
-   
+
+
 
 .ft-contacts {
-    
+
     margin-left: 1%;
-   
- 
+
+
 }
 
 .ft-contacts h4 {
@@ -767,7 +839,7 @@ footer {
 .socials {
     margin-left: -10%;
     padding-top: 15%;
-   
+
     color: #fff;
 }
 
@@ -786,109 +858,270 @@ footer {
     color: #fff;
     padding: 2%;
 }
-.link{
-   
+
+.link {
+
     text-align: center;
 }
+
 /*========== Footer Page Ends===============*/
 /*========== Media Query===============*/
 @media (max-width: 992px) {
-    .popular-row{
+    .popular-row {
         flex-wrap: wrap;
 
     }
-    .our-team-cont{
+
+    .our-team-cont {
         flex-wrap: wrap;
     }
-    
-    
+
+
 }
-@media (max-width: 768px) {
-    .popular-row{
-        flex-wrap: wrap;
-        
-    }
-    .our-team-cont{
-        flex-wrap: wrap;
-    }
-    .team-cont{
-      flex-basis: 100%;
-    }
-    
-    
-    .nav{
 
+@media (max-width: 768px) {
+
+    .img_biryani, .img_avocado, .img_pancake, 
+    .img_poha, .img_upma, .img_pakora, .img_tikka, .img_puff, .img_veg_pakora, .img_schezwan, .img_momos, .img_paneer, .img_bhatura, .img_kulcha, .img_matar_paneer, .img_butter_masala  {
+        height: 50vh;
+    }
+    header {
+        height: 50vh;
+
+    }
+    
+    .btn {
+        padding: 10px 14px;
+        font-size: 14px;
+        font-weight: 900;
+    }
+
+    .popular-row {
+        flex-wrap: wrap;
+
+    }
+
+    .our-team-cont {
+        flex-wrap: wrap;
+    }
+
+    .team-cont {
+        flex-basis: 100%;
+    }
+
+    .recipe-logo {
+        font-size: .8em;
+    }
+
+    .recipe-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav {
         position: absolute;
         background: #292929;
-        width: 200px;
+        width: 250px;
         height: 100vh;
         top: 0;
         right: 0;
         text-align: left;
     }
     
-    
-    
-    .nav ul li a{
+
+    .nav ul li a {
         display: block;
+        margin-left: 0px;
         padding: 10%;
         color: #2fceff;
         text-align: center;
     }
-    #menu-button, #exit-button{
+    .nav .sub-menu-1 ul li a {
         display: block;
     }
-    .about .about-content{
+
+    #menu-button,
+    #exit-button {
+        display: block;
+    }
+
+    .about .about-content {
         flex-basis: 100%;
     }
-    .header-h1 h1{
-        font-size: 3rem;
+
+    .header-h1 h1 {
+        font-size: 2.2rem;
     }
-    .header-h1  p{
-        font-size: 1.5em;
+
+    .header-h1 p {
+        font-size: 1em;
         font-weight: 900;
     }
-    .recipe_img_container{
-        top: 80%;
-       }
-       .contact-info {
-         background:none;
+
+    .popular h2 {
+        font-size: 2em;
     }
+
+    .our-team h2 {
+        font-size: 2.5em;
+    }
+
+    .our-team h2 {
+        font-size: 2em;
+    }
+
+    .team-cont img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team-pic p {
+        font-size: .8em;
+
+    }
+
+    .about-content h1 {
+        font-size: 1.6em;
+
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .title h2 {
+        font-size: 2em;
+    }
+
+    .contact-info {
+        background: none;
+    }
+
     .contactForm {
         margin: 50px auto;
     }
-    
+
+    .recipe_img_container {
+
+        padding: .4rem;
+    }
+
+    .recipe_name {
+        font-size: 24px;
+    }
+
+    .recipe_title p span {
+
+        font-size: 20px;
+
+    }
+
+    .recipe_title p {
+        font-size: 20px;
+
+    }
+
+    .recipe_content {
+
+        padding-top: 2rem;
+
+    }
+
+    .recipe_content h3 {
+
+        font-size: 2rem;
+    }
+
+    .recipe_content p {
+        font-size: 16px;
+
+    }
+
+    .method .steps {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .method .sub_steps {
+        font-size: 15px;
+    }
+
+    .method img {
+        width: 70%;
+        height: 70%;
+    }
+
     .sub-menu {
 
         display: none;
         text-align: center;
-    
+        margin-top: -20px;
+
     }
-   
+
     .nav ul li:hover .sub-menu {
         display: block;
-        
-     }
-     .sub-menu-1 {
+        box-shadow: 0 15px 50px rgba(185, 173, 173, 0.714);
+
+    }
+
+    .sub-menu-1 {
         display: none;
+       
+
+    }
+
+
+    .hover-me:hover .sub-menu-1 {
+        display: block;
+        box-shadow: 0 15px 50px rgba(185, 173, 173, 0.714);
+      
         
+     
+    }
+    .nav ul li:hover .sub-menu ul li {
+       padding: 0px;
+        
+    } 
+    
+
+    .ft-contacts p {
+        font-size: .7em;
+        letter-spacing: .05em;
+    }
+
+    .ft-bottom p {
+        font-size: .7em;
+    }
+
+    .ft-links .nav-links p {
+        font-size: 12px;
+        padding: 1% 2%;
+    }
+
+    .ft-links .nav-links {
+        margin-left: -3%;
+    }
+
+    .ft-contacts h4 {
+        font-size: 14px;
+    }
+
+    .socials {
+        font-size: 14px;
+        margin-left: -1%;
     }
    
-    
-    .hover-me:hover .sub-menu-1{
-        display: block;
-       
-       
-    
-    }
-}
-
-@media (min-width: 1200px){
-    .recipe_img_container{
-     top: 82%;
-    }
 
 }
+
+@media (max-width: 1200px) {
+    .recipe_img_container {
+        top: 85%;
+    }
+  
+}
+
 @media screen and (min-width: 768px) {
 
 
@@ -896,34 +1129,36 @@ footer {
 
         display: none;
         text-align: center;
-    
+
     }
-   
+
     .nav ul li:hover .sub-menu {
         display: block;
-         position: absolute;
-         background: #292929;
-         margin-left: 5px;
-         width: 200px;
-        
-     }
-     .sub-menu-1 {
+        position: absolute;
+        background: #292929;
+        margin-left: 5px;
+        width: 200px;
+
+    }
+
+    .sub-menu-1 {
         display: none;
         margin-left: -190px;
         width: 180px;
-        border-right:2px solid #2fceff;
-        border-top:2px solid #2fceff;
+        border-right: 2px solid #2fceff;
+        border-top: 2px solid #2fceff;
     }
-   
-    
-    .hover-me:hover .sub-menu-1{
+
+
+    .hover-me:hover .sub-menu-1 {
         display: block;
         position: absolute;
         background: #292929;
         margin-top: -12px;
-       
-    
+
+
     }
+
     /* .nav .sub-menu ul {
         display: block;
         margin-top: 20px;
@@ -932,13 +1167,160 @@ footer {
         position: relative;
     }
      */
-    
-    .nav ul li{
+
+    .nav ul li {
         width: fit-content;
     }
-    nav .sub-menu ul li {
     
+
+}
+@media only screen and (max-width: 600px) {
+    .btn {
+        padding: 10px 12px;
+    }
+
+    .img_biryani, .img_avocado, .img_pancake, 
+    .img_poha, .img_upma, .img_pakora, .img_tikka, .img_puff, .img_veg_pakora, .img_schezwan, .img_momos, .img_paneer, .img_bhatura, .img_kulcha, .img_matar_paneer, .img_butter_masala  {
+        height: 50vh;
+    }
+    header {
+        height: 50vh;
+
+    }
+
+    .recipe-logo {
+        font-size: .6rem;
+        margin-top: 10px;
+    }
+
+    .recipe-logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #menu-button {
+
+        font-size: 1.5em;
+        margin-top: 10px;
+
+    }
+
+    #exit-button {
+        font-size: 1.5em;
+
+    }
+
+    .header-h1 h1 {
+        font-size: 28px;
+
+    }
+
+    .header-h1 p {
+        font-size: 12px;
+    }
+
+    .popular h2 {
+        font-size: 2em;
+    }
+
+    .our-team h2 {
+        font-size: 2em;
+    }
+
+    .about-content h1 {
+        font-size: 1.5em;
+    }
+
+    .title h2 {
+        font-size: 1.5em;
+    }
+
+    .title p {
+        font-size: 16px;
+    }
+
+    .contactForm {
+        padding: 50px;
+        margin-top: 50px;
+
+    }
+
+    .recipe_img_container {
+        top: 85%;
+        padding: .6rem;
+    }
+
+    .recipe_name {
+        font-size: 20px;
+    }
+
+    .recipe_title p span {
+        font-size: 16px;
+    }
+
+    .recipe_title p {
+        font-size: 16px;
+    }
+
+    .recipe_content h3 {
+        font-size: 1.5rem;
+        margin-top: 0px;
+    }
+
+    .recipe_content p {
+        font-size: 14px;
+     
+
+    }
+
+    .recipe_content {
+
+        padding-top: 2rem;
+
+    }
+
+    .instruction {
+        width: 90%;
+    }
+
+    .method .steps {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .method img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .method .sub_steps {
+        font-size: 14px;
+    }
+
+    .ft-contacts p {
+        font-size: .6em;
+        letter-spacing: .05em;
+    }
+
+    .ft-bottom p {
+        font-size: .5em;
+    }
+
+    .ft-links .nav-links p {
+        font-size: 12px;
+        padding: 0 2%;
+    }
+
+    .ft-links .nav-links {
+        margin-left: -3%;
+    }
+
+    .ft-contacts h4 {
+        font-size: 12px;
+    }
+
+    .socials {
+        font-size: 12px;
+        margin-left: -1%;
     }
 }
-    
-    

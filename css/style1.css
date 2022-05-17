@@ -919,6 +919,7 @@ footer {
     }
 
     .nav {
+       
         position: absolute;
         background: #292929;
         width: 250px;
@@ -1177,6 +1178,9 @@ footer {
 @media only screen and (max-width: 600px) {
     .btn {
         padding: 10px 12px;
+    }
+    .nav{
+        right: 0;
     }
 
     .img_biryani, .img_avocado, .img_pancake, 
